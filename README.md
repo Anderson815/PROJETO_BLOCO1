@@ -13,7 +13,7 @@
 
 <h2 id="Sobre">:computer: Sobre o projeto</h2>
 <p>
-  📦 PROJETO ECOMMERCE GAMES - GENERATION: Uma loja virtual voltado especialmente para os gamers. Nessa loja pode comprar diversos produtos deste fantástico mundo de aventura dos jogos.  
+  📦 PROJETO ECOMMERCE GAMES - GENERATION: Uma loja virtual voltado especialmente para os gamers. Nessa loja você pode comprar diversos produtos deste fantástico mundo de aventura dos jogos.  
 </p>
 
 <p>
