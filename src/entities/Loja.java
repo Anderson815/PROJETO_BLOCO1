@@ -60,8 +60,8 @@ public class Loja {
 		for(int indiceProd = 0; indiceProd < compra.getListaProdutos().size(); indiceProd++) {
 			System.out.print(compra.getListaProdutos().get(indiceProd).getDescricao());
 			System.out.print("\t\t" + compra.getListaQuantidade().get(indiceProd));
-			System.out.print("\t\t" + compra.getListaProdutos().get(indiceProd).getValorUnitario());
-			System.out.println("\t\t" + compra.getListaValorTotalCadaProduto().get(indiceProd));
+			System.out.printf("\t\t%.2f", compra.getListaProdutos().get(indiceProd).getValorUnitario());
+			System.out.printf("\t\t%.2f\n", compra.getListaValorTotalCadaProduto().get(indiceProd));
 		}
 		System.out.println();
 		System.out.printf("Valor Total: %.2f\n" , compra.getValorTotal());

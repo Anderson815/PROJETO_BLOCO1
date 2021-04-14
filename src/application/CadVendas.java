@@ -14,7 +14,6 @@ public class CadVendas {
 	public static void main(String[] args) {
 		
 		Locale.setDefault(Locale.US);
-		@SuppressWarnings("resource")
 		Scanner leia = new Scanner(System.in);
 		Loja loja = new Loja();
 		
@@ -23,7 +22,7 @@ public class CadVendas {
 		
 		do {
 			System.out.println("Bem vindo a " + loja.getNome());
-			System.out.print("Deseja compra [1 - SIM | 2 - NÃO]: ");
+			System.out.print("Deseja compra [1-SIM | 2-NÃO]: ");
 			opcaoCompra = leia.next().charAt(0);
 			
 			if(opcaoCompra == '1') {
@@ -48,7 +47,7 @@ public class CadVendas {
 								Jogo jogo = (Jogo) produtosLoja[indice];
 								System.out.print(jogo.getCodigo());
 								System.out.print("\t" + jogo.getNome());
-								System.out.print("\t\t" + jogo.getValorUnitario());
+								System.out.printf("\t\t%.2f", jogo.getValorUnitario());
 								System.out.println("\t\t" + jogo.getQtdeEstoque());
 							}
 							
@@ -67,9 +66,9 @@ public class CadVendas {
 									int qtdeJogo = leia.nextInt();
 									
 									if(qtdeJogo > produtosLoja[codProduto - 1].getQtdeEstoque()) {
-										System.out.println("Valor inválido: Estoque insuficiente.");
-									}else if(qtdeJogo < 0) {
-										System.out.println("Valor inválido: Estoque negativo");
+										System.out.println("Valor inválido: Estoque insuficiente\n");
+									}else if(qtdeJogo < 1) {
+										System.out.println("Valor inválido: Você digitou uma quantidade menor que 1\n");
 									}
 									else {
 										compra.addProduto(produtosLoja[codProduto - 1], qtdeJogo);
@@ -94,7 +93,7 @@ public class CadVendas {
 								Console console = (Console) produtosLoja[indice];
 								System.out.print(console.getCodigo());
 								System.out.print("\t" + console.getMarca());
-								System.out.print("\t\t" + console.getValorUnitario());
+								System.out.printf("\t\t%.2f", console.getValorUnitario());
 								System.out.println("\t\t" + console.getQtdeEstoque());
 							}
 							
@@ -117,8 +116,8 @@ public class CadVendas {
 									if (qntDeJogo > produtosLoja[codProduto - 1].getQtdeEstoque()) 
 									{
 										System.out.println("Valor inválido: Estoque insuficiente.");
-									}else if(qntDeJogo < 0) {
-										System.out.println("Valor inválido: Estoque negativo");
+									}else if(qntDeJogo < 1) {
+										System.out.println("Valor inválido: Você digitou uma quantidade menor que 1\n");
 									}
 									else 
 									{
@@ -137,7 +136,7 @@ public class CadVendas {
 							char formaPagamento = ' ';
 							
 							do {
-								System.out.print("Forma Pagamento [1 - A vista | 2 - Débito | 3 - Crédito]: ");
+								System.out.print("Forma Pagamento [1-A vista | 2-Débito | 3-Crédito]: ");
 								formaPagamento = leia.next().charAt(0);
 								
 								if(formaPagamento == '3') {
