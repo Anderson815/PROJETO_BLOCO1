@@ -1,4 +1,4 @@
-<img src="Midias_Readme/Banner.png" alt="Banner do projeto">
+<img src="" alt="Banner do projeto">
 
 <h1 align="center">PROJETO ECOMMERCE GAMES - GENERATION</h1>
 <p align="center">Concluído :rocket: </p>
@@ -28,11 +28,31 @@
   - [x] Emitir nota fiscal
 
 <p>Tela da nota fiscal</p>
-<img src="Midias_Readme/g">
+<img src="">
 
 <h2 id="Executar">🚀 Como executar o projeto</h2>
-<p>Você pode executar e testar a aplicação acessando o swagger do meu projeto no meu heroku clicando <a href="https://estoqueapirest.herokuapp.com/swagger-ui.html#/produto45controller">aqui</a></p>
-<p>Caso você queira usar o Postman para testar o projeto basta usar a url: https://estoqueapirest.herokuapp.com</p>
+<h3>Requisitos</h3>
+<ul>
+  <li>Java 15</li>
+  <li>Git</li>
+</ul>
+<h3>Etapas para executar</h3>
+```bash
+
+# Clone este repositório
+$ git clone https://github.com/Anderson815/PROJETO_BLOCO1
+
+# Acesse a pasta do projeto no terminal/cmd
+$ cd PROJETO_BLOCO1
+
+# Vá para a pasta dist
+$ cd dist
+
+# Execute a aplicação no terminal
+$ java -jar 
+
+```
+
 
 <h2 id="Tecnologias">🛠 Tecnologias</h2>
 
