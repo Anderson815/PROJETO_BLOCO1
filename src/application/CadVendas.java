@@ -41,13 +41,13 @@ public class CadVendas {
 						case '1':
 							System.out.println();
 							System.out.println("\nOs jogos dísponiveis são: \n");
-							System.out.println("Cod \tNome do Jogo \t\tValor Uni. \tEstoque");
+							System.out.println("Cod \tNome do Jogo \t\tValor Uni. \t\tEstoque");
 							
 							for(int indice = 0; indice <= 5; indice++) {
 								Jogo jogo = (Jogo) produtosLoja[indice];
 								System.out.print(jogo.getCodigo());
 								System.out.print("\t" + jogo.getNome());
-								System.out.printf("\t\t%.2f", jogo.getValorUnitario());
+								System.out.printf("\t\tR$ %.2f", jogo.getValorUnitario());
 								System.out.println("\t\t" + jogo.getQtdeEstoque());
 							}
 							
@@ -87,13 +87,13 @@ public class CadVendas {
 						case '2':
 							System.out.println();
 							System.out.println("\nOs consoles disponíveis são: \n");
-							System.out.println("Cod \tConsole \t\tValor Uni. \tEstoque"); 
+							System.out.println("Cod \tConsole \t\tValor Uni. \t\tEstoque"); 
 							
 							for(int indice = 6; indice <= 9; indice++) {
 								Console console = (Console) produtosLoja[indice];
 								System.out.print(console.getCodigo());
 								System.out.print("\t" + console.getMarca());
-								System.out.printf("\t\t%.2f", console.getValorUnitario());
+								System.out.printf("\t\tR$ %.2f", console.getValorUnitario());
 								System.out.println("\t\t" + console.getQtdeEstoque());
 							}
 							
