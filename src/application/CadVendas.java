@@ -62,19 +62,24 @@ public class CadVendas {
 								System.out.println("Você escolheu voltar ao menu\n");
 							}
 							else if (codProduto <= 6) {								
-								System.out.print("Digite a quantidade que você deseja: ");
-								int qtdeJogo = leia.nextInt();
-								
-								if(qtdeJogo > produtosLoja[codProduto - 1].getQtdeEstoque()) {
-									System.out.println("Valor inválido: Estoque insuficiente.");
-								}else if(qtdeJogo < 0) {
-									System.out.println("Valor inválido: Estoque negativo");
+								if(!compra.getListaProdutos().contains(produtosLoja[codProduto - 1])) {								
+									System.out.print("Digite a quantidade que você deseja: ");
+									int qtdeJogo = leia.nextInt();
+									
+									if(qtdeJogo > produtosLoja[codProduto - 1].getQtdeEstoque()) {
+										System.out.println("Valor inválido: Estoque insuficiente.");
+									}else if(qtdeJogo < 0) {
+										System.out.println("Valor inválido: Estoque negativo");
+									}
+									else {
+										compra.addProduto(produtosLoja[codProduto - 1], qtdeJogo);
+										loja.getProdutosLoja()[codProduto - 1].tirarEstoque(qtdeJogo); // atualizaEstoque
+										System.out.println("Seu produto foi adicionado ao carrinho");
+										System.out.println();
+									}
 								}
 								else {
-									compra.addProduto(produtosLoja[codProduto - 1], qtdeJogo);
-									loja.getProdutosLoja()[codProduto - 1].tirarEstoque(qtdeJogo); // atualizaEstoque
-									System.out.println("Seu produto foi adicionado ao carrinho");
-									System.out.println();
+									System.out.println("Você já possui este item no seu carrinho!\n");									
 								}
 							}
 							break;
@@ -105,20 +110,24 @@ public class CadVendas {
 							}
 							else if (codProduto >= 7 && codProduto <= 10) 
 							{
-								System.out.print("Digite a quantidade que você deseja: ");
-								int qntDeJogo = leia.nextInt();
-								
-								if (qntDeJogo > produtosLoja[codProduto - 1].getQtdeEstoque()) 
-								{
-									System.out.println("Valor inválido: Estoque insuficiente.");
-								}else if(qntDeJogo < 0) {
-									System.out.println("Valor inválido: Estoque negativo");
-								}
-								else 
-								{
-									compra.addProduto(produtosLoja[codProduto - 1], qntDeJogo);
-									loja.getProdutosLoja()[codProduto - 1].tirarEstoque(qntDeJogo);
-									System.out.println("Seu produto foi adicionado ao carrinho.\n");
+								if(!compra.getListaProdutos().contains(produtosLoja[codProduto - 1])) {
+									System.out.print("Digite a quantidade que você deseja: ");
+									int qntDeJogo = leia.nextInt();
+									
+									if (qntDeJogo > produtosLoja[codProduto - 1].getQtdeEstoque()) 
+									{
+										System.out.println("Valor inválido: Estoque insuficiente.");
+									}else if(qntDeJogo < 0) {
+										System.out.println("Valor inválido: Estoque negativo");
+									}
+									else 
+									{
+										compra.addProduto(produtosLoja[codProduto - 1], qntDeJogo);
+										loja.getProdutosLoja()[codProduto - 1].tirarEstoque(qntDeJogo);
+										System.out.println("Seu produto foi adicionado ao carrinho.\n");
+									}
+								}else {
+									System.out.println("Você já possui este item no seu carrinho!\n");	
 								}
 							}
 							break;
