@@ -52,24 +52,27 @@ public class Loja {
 	public void emitirNota(Compra compra) {
 		this.notaFiscal += 1;
 		System.out.println();
+		System.out.println("============================================================");
 		System.out.println(this.nome);
 		System.out.println("CNPJ: " + this.cnpj);
-		System.out.println("NF: " + this.getNotaFiscal());
-		System.out.println();
+		System.out.println("Nota Fiscal: " + this.getNotaFiscal());
+		System.out.println("------------------------------------------------------------");
 		System.out.println("Produto \tQuantidade \tValor Uni. \tTotal");
 		for(int indiceProd = 0; indiceProd < compra.getListaProdutos().size(); indiceProd++) {
 			System.out.print(compra.getListaProdutos().get(indiceProd).getDescricao());
 			System.out.print("\t\t" + compra.getListaQuantidade().get(indiceProd));
-			System.out.printf("\t\t%.2f", compra.getListaProdutos().get(indiceProd).getValorUnitario());
-			System.out.printf("\t\t%.2f\n", compra.getListaValorTotalCadaProduto().get(indiceProd));
+			System.out.printf("\t\tR$ %.2f", compra.getListaProdutos().get(indiceProd).getValorUnitario());
+			System.out.printf("\tR$ %.2f\n", compra.getListaValorTotalCadaProduto().get(indiceProd));
 		}
+		System.out.println("------------------------------------------------------------");
+		System.out.printf("Valor Total:\t   R$ %.2f\n" , compra.getValorTotal());
+		System.out.printf("Valor Imposto:\t   R$ %.2f\n" , compra.getValorImposto());
+		System.out.printf("Valor Desconto:\t   R$ %.2f\n" , compra.getValorDesconto());
+		System.out.printf("Valor Juros:\t   R$ %.2f\n" , compra.getValorJuros());
+		System.out.printf("Valor Parcelas:\t   R$ %.2f\n" , compra.getValorParcelas());
+		System.out.println("Qtda. Parcelas:\t   " + compra.getQuantidadeParcelas());
+		System.out.println("============================================================");
 		System.out.println();
-		System.out.printf("Valor Total: %.2f\n" , compra.getValorTotal());
-		System.out.printf("Valor Imposto: %.2f\n" , compra.getValorImposto());
-		System.out.printf("Valor Desconto: %.2f\n" , compra.getValorDesconto());
-		System.out.printf("Valor Juros: %.2f\n" , compra.getValorJuros());
-		System.out.printf("Valor Parcelas: %.2f\n" , compra.getValorParcelas());
-		System.out.println("Qtda. Parcelas: " + compra.getQuantidadeParcelas());
 		System.out.println();
 	}
 }
