@@ -52,6 +52,7 @@ public class Loja {
 	public void emitirNota(Compra compra) {
 		this.notaFiscal += 1;
 		System.out.println();
+		System.out.println();
 		System.out.println("============================================================");
 		System.out.println(this.nome);
 		System.out.println("CNPJ: " + this.cnpj);

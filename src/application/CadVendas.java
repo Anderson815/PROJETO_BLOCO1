@@ -30,7 +30,8 @@ public class CadVendas {
 				do {
 					Produto produtosLoja[] = loja.getProdutosLoja();
 					
-					
+					System.out.println();
+					System.out.println("------------------------------ MENU -------------------------------");
 					System.out.println("\n"+loja.getNome());
 					System.out.print("Olá, selecione a categoria desejada [1-JOGO | 2-CONSOLE | 3-FINALIZAR]: ");
 					opcao = leia.next().charAt(0);
@@ -40,7 +41,9 @@ public class CadVendas {
 					switch(opcao) {
 						case '1':
 							System.out.println();
-							System.out.println("\nOs jogos dísponiveis são: \n");
+							System.out.println();
+							System.out.println("------------------------------ JOGOS ------------------------------");
+							System.out.println();
 							System.out.println("Cod \tNome do Jogo \t\tValor Uni. \t\tEstoque");
 							
 							for(int indice = 0; indice <= 5; indice++) {
@@ -73,7 +76,7 @@ public class CadVendas {
 									else {
 										compra.addProduto(produtosLoja[codProduto - 1], qtdeJogo);
 										loja.getProdutosLoja()[codProduto - 1].tirarEstoque(qtdeJogo); // atualizaEstoque
-										System.out.println("Seu produto foi adicionado ao carrinho");
+										System.out.println("O produto foi adicionado ao carrinho");
 										System.out.println();
 									}
 								}
@@ -86,7 +89,9 @@ public class CadVendas {
 							
 						case '2':
 							System.out.println();
-							System.out.println("\nOs consoles disponíveis são: \n");
+							System.out.println();
+							System.out.println("--------------------------- CONSOLES ------------------------------");
+							System.out.println();
 							System.out.println("Cod \tConsole \t\tValor Uni. \t\tEstoque"); 
 							
 							for(int indice = 6; indice <= 9; indice++) {
@@ -123,7 +128,7 @@ public class CadVendas {
 									{
 										compra.addProduto(produtosLoja[codProduto - 1], qntDeJogo);
 										loja.getProdutosLoja()[codProduto - 1].tirarEstoque(qntDeJogo);
-										System.out.println("Seu produto foi adicionado ao carrinho.\n");
+										System.out.println("O produto foi adicionado ao carrinho.\n");
 									}
 								}else {
 									System.out.println("Você já possui este item no seu carrinho!\n");	
@@ -132,16 +137,19 @@ public class CadVendas {
 							break;
 							
 						case '3':							
+							System.out.println();
+							System.out.println();
+							System.out.println("-------------------------- FINALIZAR -------------------------------");
+							System.out.println();				
 							int parcela = 0;
 							char formaPagamento = ' ';
 							
 							do {
-								System.out.print("Forma Pagamento [1-A vista | 2-Débito | 3-Crédito]: ");
+								System.out.print("Forma Pagamento [1-À VISTA | 2-DÉBITO | 3-CRÉDITO]: ");
 								formaPagamento = leia.next().charAt(0);
 								
 								if(formaPagamento == '3') {
 									do {
-										System.out.println();
 										System.out.print("Informe as parcelas [1 ou 2]: ");
 										parcela = leia.nextInt();
 										if(parcela < 1 || parcela > 2){
