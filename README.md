@@ -37,6 +37,7 @@
   <li>Git</li>
 </ul>
 <h3>Etapas para executar</h3>
+
 ```bash
 
 # Clone este repositório
@@ -49,7 +50,7 @@ $ cd PROJETO_BLOCO1
 $ cd dist
 
 # Execute a aplicação no terminal
-$ java -jar 
+$ java -jar ecommerce.jar
 
 ```
 
