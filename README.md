@@ -22,15 +22,13 @@
 
 <h2 id="Funcionalidades">⚙️ Funcionalidades</h2>
 
-  - [x] Cadastrar produto
-  - [x] Consultar produto pelo ID
-  - [x] Consultar produtos de uma marca
-  - [x] Consultar todos os produtos do estoque
-  - [x] Alterar produto
-  - [x] Deletar produto
+  - [x] Navegar por categorias dos produtos
+  - [x] Colocar produtos no carrinho
+  - [x] Finalizar compra
+  - [x] Emitir nota fiscal
 
-<p>Endpoints para as funcionalidades: </p>
-<img src="Midias_Readme/EndPoints.png">
+<p>Tela da nota fiscal</p>
+<img src="Midias_Readme/g">
 
 <h2 id="Executar">🚀 Como executar o projeto</h2>
 <p>Você pode executar e testar a aplicação acessando o swagger do meu projeto no meu heroku clicando <a href="https://estoqueapirest.herokuapp.com/swagger-ui.html#/produto45controller">aqui</a></p>
