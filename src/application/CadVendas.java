@@ -61,13 +61,16 @@ public class CadVendas {
 							else if(codProduto == 0) {
 								System.out.println("Você escolheu voltar ao menu\n");
 							}
-							else if (codProduto <= 6) {
+							else if (codProduto <= 6) {								
 								System.out.print("Digite a quantidade que você deseja: ");
 								int qtdeJogo = leia.nextInt();
 								
-								if(qtdeJogo > produtosLoja[codProduto].getQtdeEstoque()) {
+								if(qtdeJogo > produtosLoja[codProduto - 1].getQtdeEstoque()) {
 									System.out.println("Valor inválido: Estoque insuficiente.");
-								}else {
+								}else if(qtdeJogo < 0) {
+									System.out.println("Valor inválido: Estoque negativo");
+								}
+								else {
 									compra.addProduto(produtosLoja[codProduto - 1], qtdeJogo);
 									loja.getProdutosLoja()[codProduto - 1].tirarEstoque(qtdeJogo); // atualizaEstoque
 									System.out.println("Seu produto foi adicionado ao carrinho");
@@ -108,13 +111,14 @@ public class CadVendas {
 								if (qntDeJogo > produtosLoja[codProduto - 1].getQtdeEstoque()) 
 								{
 									System.out.println("Valor inválido: Estoque insuficiente.");
+								}else if(qntDeJogo < 0) {
+									System.out.println("Valor inválido: Estoque negativo");
 								}
 								else 
 								{
 									compra.addProduto(produtosLoja[codProduto - 1], qntDeJogo);
 									loja.getProdutosLoja()[codProduto - 1].tirarEstoque(qntDeJogo);
 									System.out.println("Seu produto foi adicionado ao carrinho.\n");
-									System.out.println();
 								}
 							}
 							break;
