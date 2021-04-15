@@ -26,8 +26,14 @@
   - [x] Finalizar compra
   - [x] Emitir nota fiscal
 
-<p>Tela da nota fiscal</p>
-<img src="">
+<p>Tabela de preços dos jogos:</p>
+<img src="Midias_Readme/telas/jogos.png" alt="Tabela de preços dos jogos">
+
+<p>Tabela de preços dos consoles:</p>
+<img src="Midias_Readme/telas/consoles.png" alt="Tabela de preços dos consoles">
+
+<p>Tela para finalizar a compra:</p>
+<img src="Midias_Readme/telas/finalizar.png" alt="Tela para finalizar a compra">
 
 <h2 id="Executar">🚀 Como executar o projeto</h2>
 <h3>Requisitos</h3>
