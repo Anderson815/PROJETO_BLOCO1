@@ -75,6 +75,10 @@ $ java -jar ecommerce.jar
       <a href="https://www.linkedin.com/in/eliabecosta/"><p>Eliabe da Costa</p></a>
     </td> 
     <td>
+      <a href="https://www.linkedin.com/in/joao-victor-moura-117832208/"><img src="Midias_Readme/integrantes/joao.jpg" width="120px;" height="120px;"></a>
+      <a href="https://www.linkedin.com/in/joao-victor-moura-117832208/"><p>João Victor</p></a>
+    </td>
+    <td>
       <a href="https://www.linkedin.com/in/kathleen-fidelis-225639195/"><img src="Midias_Readme/integrantes/kathleen.jpg" width="120px;" height="120px;"></a>
       <a href="https://www.linkedin.com/in/kathleen-fidelis-225639195/"><p>Kathleen Fidelis</p></a>
     </td>
