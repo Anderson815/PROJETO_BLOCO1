@@ -26,8 +26,14 @@
   - [x] Finalizar compra
   - [x] Emitir nota fiscal
 
-<p>Tela da nota fiscal</p>
-<img src="">
+<p>Tabela de preços dos jogos:</p>
+<img src="Midias_Readme/telas/jogos.png" alt="Tabela de preços dos jogos">
+
+<p>Tabela de preços dos consoles:</p>
+<img src="Midias_Readme/telas/consoles.png" alt="Tabela de preços dos consoles">
+
+<p>Tela para finalizar a compra:</p>
+<img src="Midias_Readme/telas/finalizar.png" alt="Tela para finalizar a compra">
 
 <h2 id="Executar">🚀 Como executar o projeto</h2>
 <h3>Requisitos</h3>
@@ -74,6 +80,10 @@ $ java -jar ecommerce.jar
       <a href="https://www.linkedin.com/in/eliabecosta/"><img src="Midias_Readme/integrantes/eliabe.jpg" width="120px;" height="120px;"></a>
       <a href="https://www.linkedin.com/in/eliabecosta/"><p>Eliabe da Costa</p></a>
     </td> 
+    <td>
+      <a href="https://www.linkedin.com/in/joao-victor-moura-117832208/"><img src="Midias_Readme/integrantes/joao.jpg" width="120px;" height="120px;"></a>
+      <a href="https://www.linkedin.com/in/joao-victor-moura-117832208/"><p>João Victor</p></a>
+    </td>
     <td>
       <a href="https://www.linkedin.com/in/kathleen-fidelis-225639195/"><img src="Midias_Readme/integrantes/kathleen.jpg" width="120px;" height="120px;"></a>
       <a href="https://www.linkedin.com/in/kathleen-fidelis-225639195/"><p>Kathleen Fidelis</p></a>
