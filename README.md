@@ -63,6 +63,24 @@ $ java -jar ecommerce.jar
 <a href="https://git-scm.com/"><img src="Midias_Readme/ferramentas/Git.png" alt="Git" title="Git"></a>
 <a href="https://github.com/"><img src="Midias_Readme/ferramentas/GitHub.png" alt="GitHub" title="GitHub"></a>
 
+<h2>👨‍💻 Integrantes do Grupo</h2>
+<p>Agradeço a toda essa galera aqui que estava junto comigo tentando fazer esse projeto dar certo :) :clap:</p>
+<table>
+  <tr>
+    <td>
+      <a href="https://www.linkedin.com/in/bruna-bonif%C3%A1cio-297197208/"><img src="Midias_Readme/integrantes/bruna.jpg" width="120px;" height="120px;"></a>  
+      <a href="https://www.linkedin.com/in/bruna-bonif%C3%A1cio-297197208/"><p>Bruna Bonifácio</p></a>
+    </td>
+    <td>
+      <a href="https://www.linkedin.com/in/eliabecosta/"><img src="Midias_Readme/integrantes/eliabe.jpg" width="120px;" height="120px;"></a>
+      <a href="https://www.linkedin.com/in/eliabecosta/"><p>Eliabe da Costa</p></a>
+    </td> 
+    <td>
+      <a href="https://www.linkedin.com/in/kathleen-fidelis-225639195/"><img src="Midias_Readme/integrantes/kathleen.jpg" width="120px;" height="120px;"></a>
+      <a href="https://www.linkedin.com/in/kathleen-fidelis-225639195/"><p>Kathleen Fidelis</p></a>
+    </td>
+  </tr>
+</table>
 <h2 id="Autor">🦸 Autor</h2>
 
 <img src="Midias_Readme/Anderson.png" alt="Foto do Anderson">
