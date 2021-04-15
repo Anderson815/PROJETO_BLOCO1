@@ -1,5 +1,3 @@
-<img src="" alt="Banner do projeto">
-
 <h1 align="center">PROJETO ECOMMERCE GAMES - GENERATION</h1>
 <p align="center">Concluído :rocket: </p>
 <p align="center">
