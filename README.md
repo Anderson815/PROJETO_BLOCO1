@@ -87,7 +87,7 @@ $ java -jar ecommerce.jar
 <p>
 Anderson Correia é um entusiasta e apaixonados por programação, focado em resolver problemas através de códigos.
 </p>
-<p>Esse projeto foi feito com muito ❤️ e carinho pelo Anderson 👋🏽 <a href="https://www.linkedin.com/in/anderson-correia/">Entre em contato!</a></p>
+<p>Esse projeto foi feito com muito ❤️ e carinho pelo Anderson e os integrantes mencionados 👋🏽 <a href="https://www.linkedin.com/in/anderson-correia/">Entre em contato!</a></p>
 
 <h2 id="Licenca">📝 Licença</h2>
 
