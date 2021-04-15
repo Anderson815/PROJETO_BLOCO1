@@ -5,6 +5,7 @@
   <a href="#Funcionalidades">Funcionalidades</a> •
   <a href="#Executar">Como Executar</a> •
   <a href="#Tecnologias">Tecnologias</a> •
+  <a href="#Integrantes">Integrantes</a> •
   <a href="#Autor">Autor</a> •
   <a href="#Licenca">Licença</a>
 </p>
@@ -61,7 +62,7 @@ $ java -jar ecommerce.jar
 <a href="https://git-scm.com/"><img src="Midias_Readme/ferramentas/Git.png" alt="Git" title="Git"></a>
 <a href="https://github.com/"><img src="Midias_Readme/ferramentas/GitHub.png" alt="GitHub" title="GitHub"></a>
 
-<h2>👨‍💻 Integrantes do Grupo</h2>
+<h2 id="Integrantes">👨‍💻 Integrantes do Grupo</h2>
 <p>Agradeço a toda essa galera aqui que estava junto comigo tentando fazer esse projeto dar certo :) :clap:</p>
 <table>
   <tr>
@@ -79,6 +80,7 @@ $ java -jar ecommerce.jar
     </td>
   </tr>
 </table>
+
 <h2 id="Autor">🦸 Autor</h2>
 
 <img src="Midias_Readme/Anderson.png" alt="Foto do Anderson">
